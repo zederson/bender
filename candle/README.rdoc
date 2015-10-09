@@ -1,0 +1,18 @@
+== README
+
+Para controlar as luzes philips hue utilizar as seguintes filas:
+
+Brilho - Utilizado para controlar a intensidade atraves da luminozidade
+```
+mosquitto_pub -d -t lights/1/bri   -m "1023"
+```
+
+Cor - utilizar hexa
+```
+mosquitto_pub -d -t lights/1/color -m "#cc0000"
+```
+
+On | Off - ligar e desligar as lampadas
+```
+mosquitto_pub -d -t lights/1/on    -m "true|false"
+```

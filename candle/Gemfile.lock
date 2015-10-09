@@ -1,0 +1,34 @@
+GIT
+  remote: https://github.com/njh/ruby-mqtt.git
+  revision: 1dad32c02777268121f0108933d7be93dfdf3890
+  specs:
+    mqtt (0.4.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chronic (0.10.2)
+    color (1.7.1)
+    eventmachine (1.0.8)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    huey (2.1.0)
+      chronic (>= 0.9.0)
+      color (>= 1.4.1)
+      eventmachine (>= 1.0.0)
+      httparty (>= 0.9.0)
+      multi_json (~> 1.8)
+    json (1.8.3)
+    multi_json (1.11.2)
+    multi_xml (0.5.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  huey
+  mqtt!
+
+BUNDLED WITH
+   1.10.6

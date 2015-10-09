@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+gem 'huey'
+gem 'mqtt', git: 'https://github.com/njh/ruby-mqtt.git'

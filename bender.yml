@@ -1,0 +1,27 @@
+bender:
+  broker: 'mqtt://cpro25389.publiccloud.com.br'
+
+candle:
+  queues:
+    - 'lights/#'
+    - 'sensors/luminosity'
+
+hermes:
+  queues:
+    - 'sensors/#'
+  max_cache: 120
+  xively:
+    key: 'z6euA493xMV9jqvoFpIJEcHwdYuUhl6tx7o4EqyOI5leJ9kC'
+    feed: '305766726'
+    uri: 'https://api.xively.com/v2/feeds'
+    version: "1.0.0"
+  luminosity: 'sensors/luminosity'
+  'sensors/temperature': 'Temperatura'
+  'sensors/luminosity': 'Luminosidade'
+
+termometro:
+  queues:
+    - 'sensors/temperature'
+  max: 20.51
+  send_queue: 'bender/socket/1'
+  buffer: 5
