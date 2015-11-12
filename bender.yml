@@ -25,3 +25,7 @@ termometro:
   max: 20.51
   send_queue: 'bender/socket/1'
   buffer: 5
+
+jaiminho:
+  queue: 'jaiminho/message'
+  message_fan: 'Muito quente! Ventilador ligado'
